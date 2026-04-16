@@ -393,6 +393,26 @@ We have a good relationship with our clients, and aim to attract more by continu
 
 <script>
 document.addEventListener("DOMContentLoaded", function () {
+  var navBar = document.getElementById("tmNav");
+  var heroSection = document.getElementById("infinite");
+
+  function updateNavFade() {
+    if (!navBar || !heroSection) {
+      return;
+    }
+
+    var scrollTop = window.pageYOffset || document.documentElement.scrollTop || 0;
+    var heroHeight = heroSection.offsetHeight || window.innerHeight || 1;
+    var fadeEnd = Math.max(heroHeight - 80, 1);
+    var alpha = Math.min(Math.max(scrollTop / fadeEnd, 0), 1);
+
+    navBar.style.setProperty("--tm-nav-bg-alpha", alpha.toFixed(3));
+  }
+
+  updateNavFade();
+  window.addEventListener("scroll", updateNavFade, { passive: true });
+  window.addEventListener("resize", updateNavFade);
+
   var gallery = document.querySelector("[data-case-study-gallery]");
 
   if (!gallery) {

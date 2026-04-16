@@ -843,16 +843,19 @@ blockquote {
 /* Navbar */
 
 .tm-navbar {
+  --tm-nav-bg-alpha: 0;
   position: fixed;
   width: 100%;
   z-index: 1000;
-  background-color: transparent;
-  transition: all 0.3s ease;
+  background-color: rgba(5, 35, 69, var(--tm-nav-bg-alpha));
+  border-bottom: 1px solid rgba(255, 255, 255, calc(var(--tm-nav-bg-alpha) * 0.2));
+  transition: background-color 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease;
 }
 
 .tm-navbar.scroll {
-  background-color: white;
-  border-bottom: 1px solid #e9ecef;
+  background-color: rgba(5, 35, 69, var(--tm-nav-bg-alpha));
+  border-bottom-color: rgba(255, 255, 255, calc(var(--tm-nav-bg-alpha) * 0.22));
+  box-shadow: 0 10px 24px rgba(0, 0, 0, calc(var(--tm-nav-bg-alpha) * 0.28));
 }
 
 .navbar-brand {
@@ -863,11 +866,11 @@ blockquote {
 
 .navbar-brand:hover,
 .tm-navbar.scroll .navbar-brand:hover {
-  color: #38B;
+  color: #D3E8FF;
 }
 
 .tm-navbar.scroll .navbar-brand {
-  color: #369;
+  color: #fff;
 }
 
 .nav-item {
@@ -879,14 +882,14 @@ blockquote {
 }
 
 .tm-navbar.scroll .tm-nav-link {
-  color: #369;
+  color: #fff;
 }
 
 .tm-navbar.scroll .tm-nav-link:hover,
 .tm-navbar.scroll .tm-nav-link.current,
 .tm-nav-link:hover {
   color: #FFF;
-  background-color: #369;
+  background-color: rgba(255, 255, 255, 0.14);
 }
 
 .navbar-toggler {
@@ -901,11 +904,15 @@ blockquote {
 }
 
 .tm-navbar.scroll .navbar-toggler {
-  border: 1px solid #707070;
+  border: 1px solid #fff;
 }
 
 .tm-navbar.scroll .navbar-toggler-icon {
-  color: #707070;
+  color: #fff;
+}
+
+.tm-navbar.scroll .toplogo {
+  filter: brightness(0) invert(1);
 }
 
 /* Hero */
