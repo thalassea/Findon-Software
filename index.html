@@ -149,8 +149,9 @@ We provide dependable support solutions for organisations that need responsive h
 At Findon Software, we turn the digital dreams of our clients into a reality. Working closely with our users throughout development to ensure that we are permanently aligned with the end-goal. Findon Software is committed to producing exceptional software for each of our clients.
 </p>
 <div style="width: 100%; height: 600px">
-<iframe frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" title="YouTube video player" width="100%" height="100%" src="https://www.youtube.com/embed/uZoU7lXK7_Y?autoplay=0&amp;mute=0&amp;controls=1&amp;start=5&amp;origin=https%3A%2F%2Fwww.findonsoftware.com&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;iv_load_policy=3&amp;modestbranding=1&amp;enablejsapi=1&amp;widgetid=1" id="widget2"></iframe>
+<iframe frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" title="YouTube video player" width="100%" height="100%" src="about:blank" data-consent-src="https://www.youtube-nocookie.com/embed/uZoU7lXK7_Y?autoplay=0&amp;mute=0&amp;controls=1&amp;start=5&amp;origin=https%3A%2F%2Fwww.findonsoftware.com&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;iv_load_policy=3&amp;modestbranding=1&amp;enablejsapi=1&amp;widgetid=1" id="widget2"></iframe>
 </div>
+<p id="videoConsentNotice" class="tm-video-consent-notice">Video content is disabled until optional cookies are accepted.</p>
 </div>
 </div>
 </div>
@@ -395,6 +396,14 @@ We have a good relationship with our clients, and aim to attract more by continu
 document.addEventListener("DOMContentLoaded", function () {
   var navBar = document.getElementById("tmNav");
   var heroSection = document.getElementById("infinite");
+  var cookieBanner = document.getElementById("cookieBanner");
+  var cookieAcceptButton = document.getElementById("cookieAcceptAll");
+  var cookieRejectButton = document.getElementById("cookieRejectOptional");
+  var cookieCloseButton = document.getElementById("closeCookieBanner");
+  var cookiePrefsLink = document.getElementById("cookiePrefsLink");
+  var videoFrame = document.getElementById("widget2");
+  var videoConsentNotice = document.getElementById("videoConsentNotice");
+  var cookieStorageKey = "fs_cookie_consent_v1";
 
   function updateNavFade() {
     if (!navBar || !heroSection) {
@@ -412,6 +421,93 @@ document.addEventListener("DOMContentLoaded", function () {
   updateNavFade();
   window.addEventListener("scroll", updateNavFade, { passive: true });
   window.addEventListener("resize", updateNavFade);
+
+  function getConsentChoice() {
+    try {
+      return localStorage.getItem(cookieStorageKey);
+    } catch (error) {
+      return null;
+    }
+  }
+
+  function applyConsentChoice(choice) {
+    var allowOptional = choice === "accepted";
+
+    if (videoFrame) {
+      var videoSource = videoFrame.getAttribute("data-consent-src");
+
+      if (allowOptional && videoSource) {
+        if (videoFrame.getAttribute("src") !== videoSource) {
+          videoFrame.setAttribute("src", videoSource);
+        }
+
+        if (videoConsentNotice) {
+          videoConsentNotice.style.display = "none";
+        }
+      } else {
+        videoFrame.setAttribute("src", "about:blank");
+
+        if (videoConsentNotice) {
+          videoConsentNotice.style.display = "block";
+        }
+      }
+    }
+  }
+
+  function saveConsentChoice(choice) {
+    try {
+      localStorage.setItem(cookieStorageKey, choice);
+    } catch (error) {
+      // Ignore storage errors and still apply in-session behaviour.
+    }
+
+    applyConsentChoice(choice);
+
+    if (cookieBanner) {
+      cookieBanner.style.display = "none";
+    }
+  }
+
+  var existingConsentChoice = getConsentChoice();
+
+  if (existingConsentChoice === "accepted" || existingConsentChoice === "rejected") {
+    applyConsentChoice(existingConsentChoice);
+
+    if (cookieBanner) {
+      cookieBanner.style.display = "none";
+    }
+  } else {
+    applyConsentChoice("rejected");
+
+    if (cookieBanner) {
+      cookieBanner.style.display = "block";
+    }
+  }
+
+  if (cookieAcceptButton) {
+    cookieAcceptButton.addEventListener("click", function () {
+      saveConsentChoice("accepted");
+    });
+  }
+
+  if (cookieRejectButton) {
+    cookieRejectButton.addEventListener("click", function () {
+      saveConsentChoice("rejected");
+    });
+  }
+
+  if (cookieCloseButton) {
+    cookieCloseButton.addEventListener("click", function () {
+      saveConsentChoice("rejected");
+    });
+  }
+
+  if (cookiePrefsLink && cookieBanner) {
+    cookiePrefsLink.addEventListener("click", function (event) {
+      event.preventDefault();
+      cookieBanner.style.display = "block";
+    });
+  }
 
   var gallery = document.querySelector("[data-case-study-gallery]");
 
@@ -613,13 +709,20 @@ Don't hesitate to contact us for collaboration inquires or any other questions
 </div>
 </div>
 </div>
-<div id="cookieConsent">
-<div id="closeCookieConsent">x</div>
-This website is using cookies. <a href="Home/PrivacyPolicy.html" target="_blank">More info</a>. <a class="cookieConsentOK">That's Fine</a>
+<div id="cookieBanner" role="dialog" aria-live="polite" aria-label="Cookie preferences">
+<button id="closeCookieBanner" type="button" aria-label="Close cookie message">&times;</button>
+<div class="cookie-banner-content">
+<p>We use essential cookies to keep this site working. We also use optional cookies for embedded media. You can accept or reject optional cookies below. See our <a href="Home/PrivacyPolicy.html" target="_blank" rel="noopener noreferrer">privacy policy</a> for details.</p>
+<div class="cookie-banner-actions">
+<button id="cookieRejectOptional" type="button" class="cookie-banner-btn cookie-banner-btn-secondary">Use essential only</button>
+<button id="cookieAcceptAll" type="button" class="cookie-banner-btn cookie-banner-btn-primary">Accept optional cookies</button>
+</div>
+</div>
 </div>
 <footer class="text-center small" style="background-color: #369">
 <p>
 <a style="color:white;" id="header_link_5" href="Home/PrivacyPolicy/index.html">Privacy-Policy</a>
+ | <a style="color:white;" id="cookiePrefsLink" href="#">Cookie preferences</a>
 </p>
 <p>
 Findon Software Ltd | Company number 10042735 | Registered office: 263 Findon Road, BN14 0HA
