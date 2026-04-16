@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">CompactHR placeholder</title>
+  <desc id="desc">Payroll and people management placeholder artwork for the CompactHR platform.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1b5468" />
+      <stop offset="100%" stop-color="#5fa49f" />
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#bg)" />
+  <rect x="82" y="78" width="1436" height="844" rx="34" fill="#f4f7f5" />
+  <rect x="132" y="132" width="1336" height="110" rx="26" fill="#ffffff" />
+  <text x="180" y="202" fill="#235266" font-family="Segoe UI, Arial, sans-serif" font-size="54" font-weight="700">CompactHR</text>
+  <text x="522" y="202" fill="#6b8892" font-family="Segoe UI, Arial, sans-serif" font-size="28">Payroll changes, onboarding, and validation</text>
+  <rect x="132" y="300" width="422" height="540" rx="30" fill="#ffffff" />
+  <text x="182" y="366" fill="#244a5b" font-family="Segoe UI, Arial, sans-serif" font-size="32" font-weight="600">Payroll Inputs</text>
+  <rect x="182" y="412" width="322" height="58" rx="18" fill="#e5eeed" />
+  <rect x="182" y="494" width="322" height="58" rx="18" fill="#e5eeed" />
+  <rect x="182" y="576" width="322" height="58" rx="18" fill="#d2ebe2" />
+  <rect x="182" y="658" width="322" height="58" rx="18" fill="#e5eeed" />
+  <rect x="602" y="300" width="378" height="540" rx="30" fill="#21485c" />
+  <text x="648" y="366" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-size="32" font-weight="600">Onboarding</text>
+  <circle cx="706" cy="450" r="24" fill="#7ad0b2" />
+  <circle cx="706" cy="530" r="24" fill="#7ad0b2" />
+  <circle cx="706" cy="610" r="24" fill="#7ad0b2" />
+  <rect x="750" y="432" width="160" height="36" rx="18" fill="#355d71" />
+  <rect x="750" y="512" width="134" height="36" rx="18" fill="#355d71" />
+  <rect x="750" y="592" width="176" height="36" rx="18" fill="#355d71" />
+  <rect x="1028" y="300" width="440" height="540" rx="30" fill="#ffffff" />
+  <text x="1078" y="366" fill="#244a5b" font-family="Segoe UI, Arial, sans-serif" font-size="32" font-weight="600">Pay Run</text>
+  <rect x="1078" y="420" width="292" height="18" rx="9" fill="#dfe8eb" />
+  <rect x="1078" y="456" width="256" height="18" rx="9" fill="#dfe8eb" />
+  <rect x="1078" y="492" width="312" height="18" rx="9" fill="#dfe8eb" />
+  <rect x="1078" y="560" width="84" height="176" rx="20" fill="#7ad0b2" />
+  <rect x="1186" y="612" width="84" height="124" rx="20" fill="#3d6a7c" />
+  <rect x="1294" y="520" width="84" height="216" rx="20" fill="#4da0a2" />
+  <rect x="1402" y="586" width="26" height="150" rx="13" fill="#dfe8eb" />
+</svg>

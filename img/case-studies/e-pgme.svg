@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">E-PGME placeholder</title>
+  <desc id="desc">Dashboard-style placeholder artwork for the E-PGME postgraduate medical education platform.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f2f46" />
+      <stop offset="100%" stop-color="#1e6a93" />
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#bg)" />
+  <rect x="76" y="72" width="1448" height="856" rx="34" fill="#eef4f8" />
+  <rect x="118" y="118" width="262" height="764" rx="28" fill="#113753" />
+  <text x="166" y="204" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-size="54" font-weight="700">E-PGME</text>
+  <text x="166" y="252" fill="#9bc9df" font-family="Segoe UI, Arial, sans-serif" font-size="24">
+    <tspan x="166" dy="0">Medical education</tspan>
+    <tspan x="166" dy="30">platform</tspan>
+  </text>
+  <rect x="166" y="320" width="168" height="72" rx="18" fill="#1b567b" />
+  <rect x="166" y="420" width="168" height="72" rx="18" fill="#174667" />
+  <rect x="166" y="520" width="168" height="72" rx="18" fill="#174667" />
+  <rect x="166" y="620" width="168" height="72" rx="18" fill="#174667" />
+  <rect x="430" y="140" width="1054" height="96" rx="24" fill="#ffffff" />
+  <text x="476" y="196" fill="#24455d" font-family="Segoe UI, Arial, sans-serif" font-size="34" font-weight="600">Teaching events, attendance, study leave, and reporting</text>
+  <rect x="430" y="278" width="318" height="250" rx="28" fill="#ffffff" />
+  <text x="470" y="342" fill="#21435b" font-family="Segoe UI, Arial, sans-serif" font-size="30" font-weight="600">Teaching Events</text>
+  <rect x="470" y="384" width="238" height="26" rx="13" fill="#dde8ee" />
+  <rect x="470" y="432" width="198" height="26" rx="13" fill="#dde8ee" />
+  <rect x="470" y="480" width="224" height="26" rx="13" fill="#8bd0dd" />
+  <rect x="790" y="278" width="318" height="250" rx="28" fill="#123754" />
+  <text x="830" y="342" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-size="30" font-weight="600">Attendance</text>
+  <rect x="838" y="392" width="100" height="100" rx="18" fill="#2f89ab" />
+  <rect x="856" y="410" width="64" height="64" rx="10" fill="#eef4f8" />
+  <rect x="958" y="398" width="102" height="20" rx="10" fill="#5db2cb" />
+  <rect x="958" y="438" width="118" height="20" rx="10" fill="#5db2cb" />
+  <rect x="958" y="478" width="82" height="20" rx="10" fill="#5db2cb" />
+  <rect x="1150" y="278" width="334" height="250" rx="28" fill="#ffffff" />
+  <text x="1190" y="342" fill="#21435b" font-family="Segoe UI, Arial, sans-serif" font-size="30" font-weight="600">Study Leave</text>
+  <rect x="1190" y="390" width="254" height="18" rx="9" fill="#dde8ee" />
+  <rect x="1190" y="432" width="220" height="18" rx="9" fill="#dde8ee" />
+  <rect x="1190" y="474" width="186" height="18" rx="9" fill="#dde8ee" />
+  <circle cx="1400" cy="438" r="48" fill="#8bd0dd" />
+  <path d="M1382 438h36M1400 420v36" stroke="#1f4b67" stroke-width="12" stroke-linecap="round" />
+  <rect x="430" y="568" width="1054" height="274" rx="30" fill="#123754" />
+  <text x="476" y="636" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-size="32" font-weight="600">Reporting and administration</text>
+  <rect x="476" y="694" width="110" height="90" rx="20" fill="#ffffff" opacity="0.18" />
+  <rect x="616" y="664" width="84" height="120" rx="20" fill="#8bd0dd" />
+  <rect x="730" y="720" width="84" height="64" rx="20" fill="#ffffff" opacity="0.2" />
+  <rect x="844" y="674" width="84" height="110" rx="20" fill="#49a9c5" />
+  <rect x="958" y="682" width="84" height="102" rx="20" fill="#ffffff" opacity="0.18" />
+  <rect x="1088" y="676" width="348" height="18" rx="9" fill="#5db2cb" />
+  <rect x="1088" y="718" width="288" height="18" rx="9" fill="#5db2cb" />
+  <rect x="1088" y="760" width="230" height="18" rx="9" fill="#5db2cb" />
+</svg>

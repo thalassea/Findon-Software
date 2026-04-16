@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">One Mortgage Systems placeholder</title>
+  <desc id="desc">Enterprise application placeholder artwork for One Mortgage Systems legacy modernisation work.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#203043" />
+      <stop offset="100%" stop-color="#4d6b84" />
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#bg)" />
+  <rect x="82" y="78" width="1436" height="844" rx="34" fill="#f3f5f7" />
+  <rect x="132" y="132" width="1336" height="120" rx="26" fill="#ffffff" />
+  <text x="180" y="208" fill="#243d56" font-family="Segoe UI, Arial, sans-serif" font-size="50" font-weight="700">One Mortgage Systems</text>
+  <text x="782" y="208" fill="#667c8b" font-family="Segoe UI, Arial, sans-serif" font-size="28">Legacy modernisation and .NET 8 migration</text>
+  <rect x="132" y="316" width="500" height="530" rx="30" fill="#ffffff" />
+  <text x="184" y="384" fill="#244056" font-family="Segoe UI, Arial, sans-serif" font-size="32" font-weight="600">Legacy Estate</text>
+  <rect x="184" y="434" width="396" height="74" rx="22" fill="#e5ebef" />
+  <rect x="184" y="534" width="396" height="74" rx="22" fill="#e5ebef" />
+  <rect x="184" y="634" width="396" height="74" rx="22" fill="#e5ebef" />
+  <rect x="674" y="316" width="166" height="530" rx="30" fill="#21384d" />
+  <path d="M724 582h52M778 582l-30-30M778 582l-30 30" stroke="#f0c36d" stroke-width="16" stroke-linecap="round" stroke-linejoin="round" />
+  <text x="706" y="692" fill="#f0c36d" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="600" transform="rotate(-90 706 692)">Modernise</text>
+  <rect x="882" y="316" width="586" height="530" rx="30" fill="#102533" />
+  <text x="934" y="384" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-size="32" font-weight="600">Sustainable Platform</text>
+  <rect x="934" y="440" width="236" height="150" rx="24" fill="#1d4258" />
+  <text x="978" y="520" fill="#f0c36d" font-family="Segoe UI, Arial, sans-serif" font-size="56" font-weight="700">.NET 8</text>
+  <rect x="1206" y="440" width="214" height="150" rx="24" fill="#16354a" />
+  <rect x="1250" y="488" width="126" height="18" rx="9" fill="#89adc4" />
+  <rect x="1250" y="530" width="96" height="18" rx="9" fill="#89adc4" />
+  <rect x="934" y="646" width="84" height="140" rx="20" fill="#f0c36d" />
+  <rect x="1044" y="598" width="84" height="188" rx="20" fill="#66809a" />
+  <rect x="1154" y="680" width="84" height="106" rx="20" fill="#89adc4" />
+  <rect x="1264" y="550" width="84" height="236" rx="20" fill="#3c5c76" />
+  <rect x="1374" y="632" width="44" height="154" rx="18" fill="#89adc4" />
+</svg>

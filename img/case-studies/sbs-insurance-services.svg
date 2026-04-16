@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">SBS Insurance Services placeholder</title>
+  <desc id="desc">Search and data migration placeholder artwork for SBS Insurance Services.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#143341" />
+      <stop offset="100%" stop-color="#2d7074" />
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#bg)" />
+  <rect x="86" y="82" width="1428" height="836" rx="34" fill="#f2f6f6" />
+  <rect x="136" y="136" width="1328" height="110" rx="26" fill="#ffffff" />
+  <text x="186" y="206" fill="#244657" font-family="Segoe UI, Arial, sans-serif" font-size="50" font-weight="700">SBS Insurance Services</text>
+  <text x="836" y="206" fill="#6a8089" font-family="Segoe UI, Arial, sans-serif" font-size="28">Data migration and search infrastructure</text>
+  <rect x="136" y="306" width="390" height="540" rx="30" fill="#ffffff" />
+  <text x="186" y="372" fill="#21465a" font-family="Segoe UI, Arial, sans-serif" font-size="32" font-weight="600">Source Data</text>
+  <rect x="186" y="418" width="290" height="74" rx="20" fill="#e5edee" />
+  <rect x="186" y="518" width="290" height="74" rx="20" fill="#e5edee" />
+  <rect x="186" y="618" width="290" height="74" rx="20" fill="#d8ece7" />
+  <rect x="568" y="306" width="168" height="540" rx="30" fill="#173948" />
+  <path d="M616 516h72M688 516l-36-36M688 516l-36 36" stroke="#84d2b8" stroke-width="16" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M688 646h-72M616 646l36-36M616 646l36 36" stroke="#62b7ce" stroke-width="16" stroke-linecap="round" stroke-linejoin="round" />
+  <rect x="778" y="306" width="686" height="540" rx="30" fill="#ffffff" />
+  <text x="830" y="372" fill="#21465a" font-family="Segoe UI, Arial, sans-serif" font-size="32" font-weight="600">Search Layer</text>
+  <rect x="830" y="420" width="582" height="66" rx="24" fill="#e8eff0" />
+  <circle cx="878" cy="453" r="18" fill="none" stroke="#244657" stroke-width="8" />
+  <path d="M892 467l18 18" stroke="#244657" stroke-width="8" stroke-linecap="round" />
+  <rect x="934" y="438" width="396" height="30" rx="15" fill="#ffffff" />
+  <circle cx="940" cy="608" r="48" fill="#84d2b8" />
+  <circle cx="1126" cy="560" r="48" fill="#62b7ce" />
+  <circle cx="1126" cy="704" r="48" fill="#204b63" />
+  <circle cx="1312" cy="608" r="48" fill="#4b8a91" />
+  <path d="M988 596h90M1126 598h138M1126 658v-46" stroke="#9fb7bf" stroke-width="12" stroke-linecap="round" />
+  <rect x="830" y="780" width="256" height="18" rx="9" fill="#d7e2e4" />
+  <rect x="1104" y="780" width="198" height="18" rx="9" fill="#d7e2e4" />
+</svg>

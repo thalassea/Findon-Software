@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">ProductNormaliser placeholder</title>
+  <desc id="desc">Product data intelligence placeholder artwork for ProductNormaliser.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#30384b" />
+      <stop offset="100%" stop-color="#556f88" />
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#bg)" />
+  <rect x="82" y="78" width="1436" height="844" rx="34" fill="#f5f6f8" />
+  <rect x="132" y="132" width="1336" height="110" rx="26" fill="#ffffff" />
+  <text x="180" y="204" fill="#283b53" font-family="Segoe UI, Arial, sans-serif" font-size="50" font-weight="700">ProductNormaliser</text>
+  <text x="734" y="204" fill="#6a7b89" font-family="Segoe UI, Arial, sans-serif" font-size="28">Open source product-intelligence engine</text>
+  <rect x="132" y="302" width="362" height="548" rx="30" fill="#ffffff" />
+  <text x="180" y="366" fill="#243d56" font-family="Segoe UI, Arial, sans-serif" font-size="32" font-weight="600">Source Feeds</text>
+  <rect x="180" y="412" width="266" height="92" rx="22" fill="#e8edf2" />
+  <rect x="180" y="530" width="266" height="92" rx="22" fill="#e8edf2" />
+  <rect x="180" y="648" width="266" height="92" rx="22" fill="#e8edf2" />
+  <rect x="536" y="302" width="188" height="548" rx="30" fill="#203348" />
+  <circle cx="630" cy="430" r="26" fill="#ffb15d" />
+  <circle cx="630" cy="546" r="26" fill="#64b2d4" />
+  <circle cx="630" cy="662" r="26" fill="#9cd4c0" />
+  <path d="M630 456v64M630 572v64" stroke="#ffffff" stroke-width="12" stroke-linecap="round" />
+  <rect x="766" y="302" width="316" height="548" rx="30" fill="#ffffff" />
+  <text x="812" y="366" fill="#243d56" font-family="Segoe UI, Arial, sans-serif" font-size="32" font-weight="600">Canonical Record</text>
+  <rect x="812" y="424" width="224" height="28" rx="14" fill="#dce5ea" />
+  <rect x="812" y="472" width="182" height="28" rx="14" fill="#dce5ea" />
+  <rect x="812" y="548" width="224" height="182" rx="24" fill="#203348" />
+  <rect x="850" y="590" width="70" height="26" rx="13" fill="#ffb15d" />
+  <rect x="936" y="590" width="62" height="26" rx="13" fill="#64b2d4" />
+  <rect x="850" y="636" width="148" height="20" rx="10" fill="#90a5b4" />
+  <rect x="850" y="676" width="126" height="20" rx="10" fill="#90a5b4" />
+  <rect x="1124" y="302" width="344" height="548" rx="30" fill="#ffffff" />
+  <text x="1170" y="366" fill="#243d56" font-family="Segoe UI, Arial, sans-serif" font-size="32" font-weight="600">Comparison Grid</text>
+  <rect x="1170" y="426" width="252" height="24" rx="12" fill="#dce5ea" />
+  <rect x="1170" y="478" width="252" height="24" rx="12" fill="#dce5ea" />
+  <rect x="1170" y="530" width="252" height="24" rx="12" fill="#dce5ea" />
+  <rect x="1170" y="596" width="74" height="154" rx="20" fill="#64b2d4" />
+  <rect x="1260" y="640" width="74" height="110" rx="20" fill="#9cd4c0" />
+  <rect x="1350" y="568" width="74" height="182" rx="20" fill="#ffb15d" />
+</svg>
