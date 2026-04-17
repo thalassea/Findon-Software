@@ -537,15 +537,41 @@ document.addEventListener("DOMContentLoaded", function () {
     return String(index + 1).padStart(2, "0");
   }
 
+  function getRequiredSlideHeight(slide) {
+    var card = slide.querySelector(".tm-case-study-card");
+    var media = slide.querySelector(".tm-case-study-media");
+    var content = slide.querySelector(".tm-case-study-content");
+
+    if (!card || !content) {
+      return slide.scrollHeight;
+    }
+
+    var gridColumns = window.getComputedStyle(card).gridTemplateColumns.split(" ").filter(Boolean);
+    var isStackedLayout = gridColumns.length === 1;
+    var mediaHeight = media ? Math.ceil(media.getBoundingClientRect().height) : 0;
+    var contentHeight = Math.ceil(content.scrollHeight);
+    var naturalHeight = isStackedLayout
+      ? mediaHeight + contentHeight
+      : Math.max(mediaHeight, contentHeight);
+
+    return naturalHeight + 2;
+  }
+
   function updateHeight() {
     if (!track || !slides.length) {
       return;
     }
 
+    track.style.height = "";
+
+    slides.forEach(function (slide) {
+      slide.style.height = "";
+    });
+
     var maxHeight = 0;
 
     slides.forEach(function (slide) {
-      var slideHeight = slide.offsetHeight;
+      var slideHeight = getRequiredSlideHeight(slide);
 
       if (slideHeight > maxHeight) {
         maxHeight = slideHeight;
