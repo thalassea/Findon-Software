@@ -1,0 +1,155 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Shikaku Room placeholder artwork</title>
+  <desc id="desc">A calm, card-based hero illustration for Shikaku Room, showing a valid 6 by 6 Shikaku puzzle with pastel rectangular regions, a highlighted 3 by 3 area labelled 9, and a blue cursor cell.</desc>
+
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#171411" flood-opacity="0.18"/>
+    </filter>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="14" flood-color="#171411" flood-opacity="0.10"/>
+    </filter>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2d2925"/>
+      <stop offset="100%" stop-color="#51483f"/>
+    </linearGradient>
+  </defs>
+
+  <!-- page background -->
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+
+  <!-- main canvas -->
+  <rect x="42" y="84" width="1516" height="832" rx="42" fill="#f5f0e7" filter="url(#shadow)"/>
+
+  <!-- left title panel -->
+  <rect x="76" y="124" width="330" height="752" rx="28" fill="#2b2622"/>
+  <text x="112" y="244" fill="#fffaf1" font-family="Georgia, 'Times New Roman', serif" font-size="66" font-weight="700">Shikaku</text>
+  <text x="112" y="306" fill="#fffaf1" font-family="Georgia, 'Times New Roman', serif" font-size="55" font-weight="700" letter-spacing="10">ROOM</text>
+
+  <line x1="118" y1="353" x2="220" y2="353" stroke="#cbbca8" stroke-width="3" stroke-linecap="round"/>
+  <rect x="235" y="346" width="16" height="16" rx="4" fill="#cbbca8"/>
+  <line x1="266" y1="353" x2="360" y2="353" stroke="#cbbca8" stroke-width="3" stroke-linecap="round"/>
+
+  <text x="118" y="420" fill="#d7cab8" font-family="Arial, Helvetica, sans-serif" font-size="29" font-weight="700">Calm rectangle</text>
+  <text x="118" y="456" fill="#d7cab8" font-family="Arial, Helvetica, sans-serif" font-size="29" font-weight="700">puzzles.</text>
+
+  <g font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" letter-spacing="1.3" text-anchor="middle">
+    <rect x="118" y="514" width="122" height="56" rx="28" fill="#4a443e"/>
+    <text x="179" y="550" fill="#f7f3ec">LOGIC</text>
+    <rect x="118" y="584" width="156" height="56" rx="28" fill="#4a443e"/>
+    <text x="196" y="620" fill="#f7f3ec">RELAXING</text>
+    <rect x="118" y="654" width="148" height="56" rx="28" fill="#4a443e"/>
+    <text x="192" y="690" fill="#f7f3ec">TIMELESS</text>
+  </g>
+
+  <!-- centre board card -->
+  <rect x="438" y="136" width="624" height="662" rx="28" fill="#fffdfa" filter="url(#softShadow)"/>
+
+  <!-- Shikaku board: 6x6, cell 92, board x=474 y=170 -->
+  <g id="board">
+    <rect x="474" y="170" width="552" height="552" rx="14" fill="#fbf8f1"/>
+
+    <!-- valid rectangular regions -->
+    <!-- 6: rows 1-2, cols 1-3 -->
+    <rect x="474" y="170" width="276" height="184" fill="#e7e1f4"/>
+    <!-- 3: row 1, cols 4-6 -->
+    <rect x="750" y="170" width="276" height="92" fill="#f2eadf"/>
+    <!-- 4: rows 2-3, cols 4-5 -->
+    <rect x="750" y="262" width="184" height="184" fill="#e8efd1"/>
+    <!-- 2: rows 2-3, col 6 -->
+    <rect x="934" y="262" width="92" height="184" fill="#dcead8"/>
+    <!-- 6: rows 3-5, cols 1-2 -->
+    <rect x="474" y="354" width="184" height="276" fill="#dbe8ea"/>
+    <!-- 3: rows 3-5, col 3 -->
+    <rect x="658" y="354" width="92" height="276" fill="#efe5d5"/>
+    <!-- 9: rows 4-6, cols 4-6 -->
+    <rect x="750" y="446" width="276" height="276" fill="#d2e3e1"/>
+    <!-- 3: row 6, cols 1-3 -->
+    <rect x="474" y="630" width="276" height="92" fill="#f1e8bd"/>
+
+    <!-- fine grid -->
+    <g stroke="#88827a" stroke-opacity="0.48" stroke-width="1.6">
+      <line x1="566" y1="170" x2="566" y2="722"/>
+      <line x1="658" y1="170" x2="658" y2="722"/>
+      <line x1="750" y1="170" x2="750" y2="722"/>
+      <line x1="842" y1="170" x2="842" y2="722"/>
+      <line x1="934" y1="170" x2="934" y2="722"/>
+      <line x1="474" y1="262" x2="1026" y2="262"/>
+      <line x1="474" y1="354" x2="1026" y2="354"/>
+      <line x1="474" y1="446" x2="1026" y2="446"/>
+      <line x1="474" y1="538" x2="1026" y2="538"/>
+      <line x1="474" y1="630" x2="1026" y2="630"/>
+    </g>
+
+    <!-- region boundaries -->
+    <g fill="none" stroke-width="3.5">
+      <rect x="474" y="170" width="276" height="184" stroke="#c9c2df"/>
+      <rect x="750" y="170" width="276" height="92" stroke="#d9cdbd"/>
+      <rect x="750" y="262" width="184" height="184" stroke="#c9d1ad"/>
+      <rect x="934" y="262" width="92" height="184" stroke="#b9ceb5"/>
+      <rect x="474" y="354" width="184" height="276" stroke="#bfd1d5"/>
+      <rect x="658" y="354" width="92" height="276" stroke="#d8c9b1"/>
+      <rect x="750" y="446" width="276" height="276" stroke="#abc7c4"/>
+      <rect x="474" y="630" width="276" height="92" stroke="#d8cc91"/>
+    </g>
+
+    <!-- active 9 region -->
+    <rect x="758" y="454" width="260" height="260" rx="7" fill="none" stroke="#1f979a" stroke-width="4" stroke-dasharray="14 10"/>
+
+    <!-- cursor cell inside highlighted 9 region, row 5 col 4 -->
+    <rect x="758" y="546" width="76" height="76" rx="6" fill="#a9c4ef" fill-opacity="0.72" stroke="#3154ff" stroke-width="5"/>
+
+    <!-- clue markers -->
+    <g fill="#3c3936" font-family="Georgia, 'Times New Roman', serif" font-size="54" text-anchor="middle" dominant-baseline="middle">
+      <text x="612" y="262">6</text>
+      <text x="888" y="216">3</text>
+      <text x="842" y="354">4</text>
+      <text x="980" y="354">2</text>
+      <text x="566" y="492">6</text>
+      <text x="704" y="492">3</text>
+      <text x="612" y="676">3</text>
+    </g>
+
+    <!-- 9 clue with subtle white disc, matching game -->
+    <circle cx="910" cy="584" r="31" fill="#fffdfa" stroke="#dad7d0" stroke-width="2"/>
+    <text x="910" y="586" fill="#3c3936" font-family="Georgia, 'Times New Roman', serif" font-size="50" text-anchor="middle" dominant-baseline="middle">9</text>
+
+    <!-- outer board border -->
+    <rect x="474" y="170" width="552" height="552" rx="14" fill="none" stroke="#2b2926" stroke-width="5"/>
+  </g>
+
+  <!-- right info cards -->
+  <g font-family="Arial, Helvetica, sans-serif">
+    <rect x="1088" y="160" width="388" height="178" rx="28" fill="#fffdfa"/>
+    <rect x="1110" y="188" width="108" height="108" rx="24" fill="#eee7dc"/>
+    <g fill="#8a837b">
+      <rect x="1138" y="214" width="22" height="22" rx="4"/>
+      <rect x="1168" y="214" width="22" height="22" rx="4"/>
+      <rect x="1138" y="244" width="22" height="22" rx="4"/>
+      <rect x="1168" y="244" width="22" height="22" rx="4"/>
+    </g>
+    <text x="1242" y="220" fill="#171513" font-size="30" font-weight="700">Simple rules</text>
+    <text x="1242" y="260" fill="#777068" font-size="23">Each number marks</text>
+    <text x="1242" y="291" fill="#777068" font-size="23">the area of a rectangle.</text>
+
+    <rect x="1088" y="380" width="388" height="178" rx="28" fill="#fffdfa"/>
+    <rect x="1110" y="408" width="108" height="108" rx="24" fill="#deedf4"/>
+    <!-- pencil icon -->
+    <g transform="translate(1136 432) rotate(-45 28 28)">
+      <rect x="23" y="8" width="18" height="52" rx="4" fill="#253743"/>
+      <polygon points="23,60 41,60 32,78" fill="#253743"/>
+      <rect x="23" y="8" width="18" height="10" rx="4" fill="#516773"/>
+    </g>
+    <text x="1242" y="439" fill="#171513" font-size="30" font-weight="700">Pure logic</text>
+    <text x="1242" y="481" fill="#777068" font-size="23">No timers.</text>
+    <text x="1242" y="513" fill="#777068" font-size="23">No pressure.</text>
+
+    <rect x="1088" y="600" width="388" height="178" rx="28" fill="#fffdfa"/>
+    <rect x="1110" y="628" width="108" height="108" rx="24" fill="#dcefd8"/>
+    <!-- leaf icon -->
+    <path d="M1163 710 C1145 696 1145 669 1177 651 C1173 681 1164 701 1149 718" fill="#2d2a27"/>
+    <text x="1242" y="653" fill="#171513" font-size="28" font-weight="700">A calm puzzle</text>
+    <text x="1242" y="688" fill="#171513" font-size="28" font-weight="700">experience</text>
+    <text x="1242" y="730" fill="#777068" font-size="23">Just you and the grid.</text>
+  </g>
+</svg>
